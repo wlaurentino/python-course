@@ -8,9 +8,9 @@ a2 = input('Digite o nome do 2.º aluno: ')
 a3 = input('Digite o nome do 3.º aluno: ')
 a4 = input('Digite o nome do 4.º aluno: ')
 
-ordemsort = [a1, a2, a3, a4]
+lista = [a1, a2, a3, a4]
 
-random.shuffle(ordemsort)
+random.shuffle(lista)
 
 print("""A ordem do sorteio foi {}"""
-      .format(ordemsort))
+      .format(lista))
