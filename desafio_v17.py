@@ -6,4 +6,4 @@ catopost = float(input('Digite o cateto oposto: '))
 catadjac = float(input('Digite o cateto adjacente: '))
 comphipot = math.sqrt((catopost ** 2) + (catadjac ** 2))
 
-print('O comprimento da hipotenusa é: {}'.format(math.floor(comphipot)))
+print('O comprimento da hipotenusa é: {:.2f}'.format(comphipot))

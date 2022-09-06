@@ -7,4 +7,4 @@ radang = math.radians(angulo)
 
 print("""O valor de seno é {:.2f}, o valor do cosseno é {:.2f}
         e o valor da tangente é {:.2f}"""
-      .format(math.cos(radang), math.sin(radang), math.tan(radang)))
+      .format(math.sin(radang), math.cos(radang), math.tan(radang)))
