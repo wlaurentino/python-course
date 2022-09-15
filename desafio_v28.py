@@ -9,7 +9,7 @@ import random
 from pygame import mixer
 
 numc = random.randrange(0, 5)
-numu = int(input('Descubra o número que o computador pensou: '))
+numu = int(input('Descubra o número de 0 a 5 que o computador pensou: '))
 
 if numu == numc:
     print('ASERTO Miserávi !! O número do computador é {}, e o seu é {}'
