@@ -7,6 +7,7 @@
 
 import random
 from pygame import mixer
+import os
 
 numc = random.randrange(0, 5)
 numu = int(input('Descubra o número de 0 a 5 que o computador pensou: '))
@@ -16,7 +17,8 @@ if numu == numc:
           .format(numc, numu))
 
     mixer.init()
-    mixer.music.load("acertou_mizeravi.mp3")
+    mixer.music.load(os.path.join(os.path.dirname(__file__),
+                     'desafio_v28_a.mp3'))
     mixer.music.set_volume(0.7)
     mixer.music.play()
     while True:
@@ -29,7 +31,8 @@ else:
     print('ERRROU !! O número do computador é {}, e o seu é {}'
           .format(numc, numu))
     mixer.init()
-    mixer.music.load("errou.mp3")
+    mixer.music.load(os.path.join(os.path.dirname(__file__),
+                     'desafio_v28_e.mp3'))
     mixer.music.set_volume(0.7)
     mixer.music.play()
     while True:

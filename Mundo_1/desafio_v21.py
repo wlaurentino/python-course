@@ -2,9 +2,10 @@
 # de um arquivo mp3
 
 from pygame import mixer
+import os
 
 mixer.init()
-mixer.music.load('desafio_v21.mp3')
+mixer.music.load(os.path.join(os.path.dirname(__file__), 'desafio_v21.mp3'))
 mixer.music.set_volume(0.7)
 mixer.music.play()
 
