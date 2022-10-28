@@ -10,7 +10,7 @@ maior = 0
 menor = 0
 sair = 'N'
 
-while sair != 'S':
+while sair != 'Ss':
     num = int(input('Digite um número: '))
     cont += 1
     soma = num + num
@@ -22,7 +22,7 @@ while sair != 'S':
             maior = num
         if num < menor:
             menor = num
-    sair = str(input('Para sair do programa digite: [S/N] ')).strip().upper()
+    sair = str(input('Deseja continuar? [S/N] ')).strip().upper()[0]
 print("""Você digitou {} números e a média entre eles foi {}
 O maior valor foi {} e o menor foi {}"""
       .format(cont, soma/cont, maior, menor))
