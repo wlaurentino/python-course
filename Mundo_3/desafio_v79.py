@@ -8,9 +8,9 @@ numeros = list()
 while True:
     numd = input('Digite um número: ')
     continuar = input('Quer continuar? [S/N]? ').strip().upper()
-    if continuar == 'N':
-        break
     if numd not in numeros:
         numeros.append(numd)
+    if continuar == 'N':
+        break
 numeros.sort()
 print(f'Os números digitados foram: {numeros}')
