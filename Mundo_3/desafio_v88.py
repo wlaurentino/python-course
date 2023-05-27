@@ -5,7 +5,7 @@
 
 import random
 
-num_jogos = int(input("Quantos jogos você quer gerar "))
+num_jogos = int(input("Quantos jogos você quer gerar? "))
 palpites_megasena = []
 
 for i in range(num_jogos):
