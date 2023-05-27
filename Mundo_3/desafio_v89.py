@@ -21,7 +21,7 @@ for estudante in alunos:
     print(f"Aluno: {nome}   Média: {media:.2f}")
 
 while True:
-    nome = input("\nDigite o nome do aluno para ver as notas individuais (or 's' to sair): ").upper()
+    nome = input("\nDigite o nome do aluno para ver as notas individuais (or 's' to sair): ")
     if nome.lower() == "s":
         break
 
